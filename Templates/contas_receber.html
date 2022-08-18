@@ -1,0 +1,41 @@
+{% extends "template.html" %}
+{% block conteudo %}
+   <div class="container col-11 col-md-9" id="form-container">
+        <div class="row gx-5">
+
+    <table class="table table-striped table-responsive table-bordered">
+        <thead class="thead-default">
+            <tr>
+                <th>Conta</th>
+                <th>VALOR</th>
+                <th>EQUIPAMENTO</th>
+                <th>DATA PAGAMENTO</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for contas in conta %}
+            <tr>
+                <td>{{ contas._cliente }}</td>
+                <td>{{ contas._valor }}</td>
+                <td>{{ contas._equipamento}}</td>
+                <td>{{ contas._data}}</td>
+
+
+                </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+
+          <div class="col-12" id="link-container">
+            <a id="botao_cadastro" class="btn btn-primary" href="{{url_for('cadastra_conta')}}">
+                <h9>Adicionar contas a receber</h9>
+            </a>
+          </div>
+    </div>
+
+
+{%endblock %}

@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block conteudo %}
+      <form action="/criar_contasR" method="post">
+        <fieldset>
+        <input type="hidden" name="id" value="{{contas.id}}>
+          <div class="form-group">
+            <label for="clienteR">cliente</label>
+            <input type="text" id="clienteR" name="cliente" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="valorR">Valor</label>
+            <input type="text" id="valorR" name="valor" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="equipamentoR">equipamento</label>
+            <input type="text" id="equipamentoR" name="equipamento" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="dataV">Data Vencimento</label>
+            <input type="text" id="edataV" name="data" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+          <a class="btn btn-danger" href="{{url_for('index')}}">Voltar</a>
+        </fieldset>
+      </form>
+
+
+{%endblock %}

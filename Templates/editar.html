@@ -1,0 +1,96 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+<div class="edito">
+      <form action="/atualizar" method="post">
+        <fieldset>
+        <input type="hidden" name="id" value="{{servico._id}}">
+          <legend>CLIENTE</legend>
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome">Nome completo </br></label>
+              <input type="text" class="form-control" placeholder="Nome completo" name="cliente" value="{{servico._cliente}}">
+            </div>
+            <div class="col">
+              <label for="nome">Cpf </br></label>
+              <input type="text" class="form-control"name="cpf" placeholder="___.___.___-__" aria-label="Last name" value="{{servico._cpf}}">
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome">Endereço</br></label>
+              <input type="text" class="form-control" name="endereco" value="{{servico._endereco}}" placeholder="Rua" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="nome">Cidade</br></label>
+              <input type="text" class="form-control" placeholder="Guaxupé" name="cidade"  value="{{servico._cidade}}" aria-label="Last name">
+          </div>
+                      <div class="row g-3">
+            <div class="col">
+              <label for="nome">Telefone</br></label>
+              <input type="text" class="form-control" placeholder="(XX) XXXXX-XXXX"name="telefone"  value="{{servico._telefone}}" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="nome">Email</br></label>
+              <input type="text" class="form-control" placeholder="leonardo@email.com"name="email"  value="{{servico._email}}" aria-label="Last name">
+          </div>
+          <legend>SERVIÇO</legend>
+            <div class="row g-3">
+              <div class="col">
+                <label>
+                 STATUS DO SERVIÇO:</br>
+                  <select name:"status">
+                    <option value="1">Em analise</option>
+                    <option value="2">Em andamento</option>
+                    <option value="3">Em Desenvolvimento</option>
+                    <option value="4">Aguardando Peças</option>
+                    <option value="5">Finalizado</option>
+                  </select>
+                </label>
+              </div>
+              <div class="col">
+                <label for="categoria">Data inicial</label>
+                <input type="date" id="categoria" name="equipamento" class="form-control">
+              </div>
+              <div class="col">
+                <label for="DATE">DATA DA ENTREGA</label>
+                <input type="date" id="categoria" name="DATE" class="form-control">
+              </div>
+              <div class="col">
+                <label>
+                  TÉCNICO:</br>
+                  <select name:"status">
+                    <option value="1">Em analise</option>
+                    <option value="2">Em andamento</option>
+                    <option value="3">Em Desenvolvimento</option>
+                    <option value="4">Aguardando Peças</option>
+                    <option value="5">Finalizado</option>
+                  </select>
+                </label>
+              </div>
+              <div class="col">
+                <label for="garantia">GARANTIA</label>
+                <input type="number" id="garantia" name="garantia"  class="form-control">
+            </div>
+           </div>
+
+          <div class="form-group">
+            <label for="console">DESCRIÇÃO DO PRODUTO</label>
+            <input type="text" id="console" name="descricao_prod"  value="{{servico._descricao_prod}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="console">DEFEITO</label>
+            <input type="text" id="console" name="defeito"  value="{{servico._defeito}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="console">OBSERVAÇÃO</label>
+            <input type="text" id="console" name="observacao" class="form-control"  value="{{servico._observacao}}">
+          </div>
+           <div>
+            <button type="submit" class="btn btn-primary btn-salvar" id="save">Salvar</button>
+          </div>
+
+        </fieldset>
+      </form>
+</div>
+{%endblock %}

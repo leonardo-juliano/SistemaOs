@@ -1,0 +1,284 @@
+body {
+   background-color: #252525;
+   color: #FFF;
+}
+#h11,#h12{
+    color: #252525;
+}
+#save{
+    padding-top: 2px;
+}
+
+.secondary-color {
+  color: #626262;
+}
+
+h1{
+    text-align:center;
+    font-size: 50px;
+    margim-bottom: 10px;
+}
+/* Form */
+#form-container {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0.5px 10px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px auto;
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  #form-container {
+    margin: 50px auto;
+    padding: 50px;
+  }
+}
+
+#form-container h1 {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+#form-container a {
+  color: #222;
+  transition: 0.5s;
+}
+
+#form-container a:hover {
+  color: #6c63ff;
+}
+
+#form-container form {
+  padding-bottom: 50px;
+}
+
+#form-container .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+}
+
+#form-container .form-control:focus {
+  box-shadow: none;
+}
+
+#form-container .form-floating label {
+  color: #ccc;
+}
+
+#form-container .form-floating > .form-control:focus ~ label {
+  color: #222;
+}
+
+#form-container .form-check-input:checked,
+#form-container input[type="submit"] {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn.btn-primary {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn.btn-primary {
+    width: auto;
+  }
+}
+
+/* Image */
+
+.row.align-items-center {
+  align-content: center;
+  height: 100%;
+}
+
+#link-container {
+  text-align: center;
+  padding-top: 50px;
+  }
+/*------------------------------*/
+FOOTER
+#footer-links-container {
+  border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column {
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (mn-width: 795px) {
+  #footer .footer-column {
+    padding: 5em 2em;
+  }
+}
+
+#footer-links-container h3 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#footer-links-container li {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media (mn-width: 795px) {
+  #footer-links-container li {
+    text-align: left;
+  }
+}
+
+#footer-links-container li a {
+  text-decoration: none;
+}
+
+#footer-links-container li a:hover {
+  color: #c09578;
+}
+
+#footer-center {
+  border-left: 1px solid #626262;
+  border-right: 1px solid #626262;
+}
+
+#footer-center h3 {
+  font-weight: 900;
+}
+
+#footer-center .store-phone {
+  color: #c09578;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: -15px;
+}
+
+
+#newsletter-container {
+  background-color: #101010;
+  border-bottom: 1px solid #626262;
+  text-align: center;
+  padding: 20px;
+}
+
+#social-container {
+  margin: 20px auto;
+}
+
+#social-container i {
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #626262;
+  transition: 0.3s;
+}
+
+#social-container i:hover {
+  color: #000;
+}
+
+#copy-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.login{
+    border-radius: 10px;
+    background-color: #52F775;
+    color:black;
+    position: absolute;
+    right: 40px;
+    font-size:19px;
+    font-weight: bold ;
+    font-family: arial ;
+    font-color: black;
+}
+
+footer{
+background: #292929;
+width: 100%;
+height: 100px;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+.botao_cadastrar{
+    background-color: #6C63FF;
+}
+
+.escrita{
+    color:#000000;
+}
+.teste{
+    background:red;
+}
+
+#logos:hover{
+    width:205px;
+    height:205px;
+    border:solid 6px;
+    border-radius:8px;
+    border-color: black;
+    transition: 0.25s;
+}
+
+h3{
+    color:black;
+    font-size:16px;
+}
+
+h8{
+    color:black;
+}
+.container{
+
+}
+
+#titulo{
+    color: red;
+}
+
+h9{
+    color:white;
+}
+
+titulos{
+    color:red;
+}
+
+h9{
+    color: white;
+    font-weight: bold ;
+    font-family: arial ;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.nome{
+    display:flex;
+
+    }
+.edito{
+    background: #3D3D3D;
+    padding:20px;
+    border-radius: 25px;
+
+}
+
+.bi-box-arrow-in-left,
+.bi-box-arrow-in-right,
+.bi-person-fill,
+.bi-plus-lg,
+.bi-person-workspace,
+{
+    font-size: 30px;
+}

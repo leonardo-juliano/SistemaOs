@@ -1,0 +1,41 @@
+{% extends "template.html" %}
+{% block conteudo %}
+   <div class="container col-11 col-md-9" id="form-container">
+        <div class="row gx-5">
+
+    <table class="table table-striped table-responsive table-bordered">
+        <thead class="thead-default">
+            <tr>
+                <th>DESCRIÇÃO</th>
+                <th>VALOR</th>
+                <th>ESTOQUE</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for produto in produtos %}
+            <tr>
+                <td>{{ produto._descricao }}</td>
+                <td>{{ produto._valor }}</td>
+                <td>{{ produto._estoque}}</td>
+                <td><a class="btn btn-danger" href="{{url_for('deletar_produto',id=produto._id)}}"> Deletar</a></td>>
+
+                </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+
+          <div class="col-12" id="link-container">
+            <a id="botao_cadastro" class="btn btn-primary" href="{{url_for('cadastra_produto')}}">
+                <h9>Adicionar produto</h9>
+            </a>
+          </div>
+    </div>
+
+
+{%endblock %}

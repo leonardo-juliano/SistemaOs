@@ -1,0 +1,36 @@
+{% extends "template.html" %}
+{% block conteudo %}
+   <div class="container col-11 col-md-9" id="form-container">
+        <div class="row gx-5">
+
+    <table class="table table-striped table-responsive table-bordered">
+        <thead class="thead-default">
+            <tr>
+                <th>Cliente</th>
+                <th>Descricao</th>
+                <th>Defeito</th>
+                <th></th>
+
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for servico in servicos %}
+            <tr>
+                <td>{{ servico._cliente }}</td>
+                <td>{{ servico._defeito }}</td>
+                <td>{{ servico._observacao }}</td>
+
+                <td><a class="btn btn-secondary"href="{{url_for('editar',id=servico._id)}}"> Editar</a></td>
+
+                <td><a class="btn btn-danger" href="{{url_for('deletar',id=servico._id)}}"> Deletar</a></td>
+                </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+    </div>
+
+{%endblock %}

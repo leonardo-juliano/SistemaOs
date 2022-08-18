@@ -1,0 +1,33 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+
+    <div class="jumbotron">
+        <h1 class="display-4" >
+          		  {{ title }}
+	    </h1>
+    </div>
+    <div class="container col-11 col-md-9" id="form-container">
+      <div class="row gx-5">
+        <div class="col-md-4" >
+           <a href="{{url_for('novo')}}">
+               <img  src="/img/adicionar.png" alt="servicos" id="logos" />
+           </a>
+        </div>
+
+        <div class="col-md-4" >
+            <a href="{{url_for('lista_servico')}}">
+                <img  src="/img/servicos.png" alt="usuario" id="logos"/>
+           </a>
+        </div>
+
+        <div class="col-md-4" >
+            <a href="{{url_for('listar_usuario')}}">
+                <img  src="/img/usuario.png" alt="usuario" id="logos" />
+            </a>
+        </div>
+
+      </div>
+    </div>
+
+{%endblock %}
